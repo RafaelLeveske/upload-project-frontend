@@ -5,6 +5,7 @@ import { MdCheckCircle, MdError, MdLink } from 'react-icons/md';
 import { Container, FileInfo, Preview } from './styles';
 
 const FileList = ({ files, onDelete }) => (
+  return <button onClick={methodDoesNotExist}>Break the world</button>;
   <Container>
     {files.map(uploadedFile => (
       <li key={uploadedFile.id}>
