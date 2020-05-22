@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { uniqueId } from 'lodash';
 import filesize from 'filesize';
 
+import * as Sentry from '@sentry/browser';
+
 import api from './services/api';
 
 import GlobalStyle from './styles/global';
@@ -9,6 +11,8 @@ import { Container, Content } from './styles'
 
 import Upload from './components/Upload';
 import FileList from './components/FileList';
+
+Sentry.init({dsn: "https://8b01fbfa1ad4401eb6deed669715507e@o396786.ingest.sentry.io/5250628"});
 
 class App extends Component {
   state = {
